@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\FawzySource\\FawzyApp\\FawzyApp\\FawzyApp.Android\\FawzyApp.Android.csproj": {}
+    "C:\\FawzySource\\FawzyHApp\\FawzyApp\\FawzyApp.Android\\FawzyApp.Android.csproj": {}
   },
   "projects": {
-    "C:\\FawzySource\\FawzyApp\\FawzyApp\\FawzyApp.Android\\FawzyApp.Android.csproj": {
+    "C:\\FawzySource\\FawzyHApp\\FawzyApp\\FawzyApp.Android\\FawzyApp.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\FawzySource\\FawzyApp\\FawzyApp\\FawzyApp.Android\\FawzyApp.Android.csproj",
+        "projectUniqueName": "C:\\FawzySource\\FawzyHApp\\FawzyApp\\FawzyApp.Android\\FawzyApp.Android.csproj",
         "projectName": "FawzyApp.Android",
-        "projectPath": "C:\\FawzySource\\FawzyApp\\FawzyApp\\FawzyApp.Android\\FawzyApp.Android.csproj",
+        "projectPath": "C:\\FawzySource\\FawzyHApp\\FawzyApp\\FawzyApp.Android\\FawzyApp.Android.csproj",
         "packagesPath": "C:\\Users\\Programmer\\.nuget\\packages\\",
-        "outputPath": "C:\\FawzySource\\FawzyApp\\FawzyApp\\FawzyApp.Android\\obj\\",
+        "outputPath": "C:\\FawzySource\\FawzyHApp\\FawzyApp\\FawzyApp.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -34,8 +34,8 @@
         "frameworks": {
           "monoandroid11.0": {
             "projectReferences": {
-              "C:\\FawzySource\\FawzyApp\\FawzyApp\\FawzyApp\\FawzyApp.csproj": {
-                "projectPath": "C:\\FawzySource\\FawzyApp\\FawzyApp\\FawzyApp\\FawzyApp.csproj"
+              "C:\\FawzySource\\FawzyHApp\\FawzyApp\\FawzyApp\\FawzyApp.csproj": {
+                "projectPath": "C:\\FawzySource\\FawzyHApp\\FawzyApp\\FawzyApp\\FawzyApp.csproj"
               }
             }
           }
@@ -68,14 +68,14 @@
         }
       }
     },
-    "C:\\FawzySource\\FawzyApp\\FawzyApp\\FawzyApp\\FawzyApp.csproj": {
+    "C:\\FawzySource\\FawzyHApp\\FawzyApp\\FawzyApp\\FawzyApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\FawzySource\\FawzyApp\\FawzyApp\\FawzyApp\\FawzyApp.csproj",
+        "projectUniqueName": "C:\\FawzySource\\FawzyHApp\\FawzyApp\\FawzyApp\\FawzyApp.csproj",
         "projectName": "FawzyApp",
-        "projectPath": "C:\\FawzySource\\FawzyApp\\FawzyApp\\FawzyApp\\FawzyApp.csproj",
+        "projectPath": "C:\\FawzySource\\FawzyHApp\\FawzyApp\\FawzyApp\\FawzyApp.csproj",
         "packagesPath": "C:\\Users\\Programmer\\.nuget\\packages\\",
-        "outputPath": "C:\\FawzySource\\FawzyApp\\FawzyApp\\FawzyApp\\obj\\",
+        "outputPath": "C:\\FawzySource\\FawzyHApp\\FawzyApp\\FawzyApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -98,8 +98,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\FawzySource\\FawzyApp\\FawzyShared\\FawzyShared.csproj": {
-                "projectPath": "C:\\FawzySource\\FawzyApp\\FawzyShared\\FawzyShared.csproj"
+              "C:\\FawzySource\\FawzyHApp\\FawzyShared\\FawzyShared.csproj": {
+                "projectPath": "C:\\FawzySource\\FawzyHApp\\FawzyShared\\FawzyShared.csproj"
               }
             }
           }
@@ -163,11 +163,11 @@
         }
       }
     },
-    "C:\\FawzySource\\FawzyApp\\FawzyShared\\FawzyShared.csproj": {
+    "C:\\FawzySource\\FawzyHApp\\FawzyShared\\FawzyShared.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\FawzySource\\FawzyApp\\FawzyShared\\FawzyShared.csproj",
+        "projectUniqueName": "C:\\FawzySource\\FawzyHApp\\FawzyShared\\FawzyShared.csproj",
         "projectName": "FawzyShared",
-        "projectPath": "C:\\FawzySource\\FawzyApp\\FawzyShared\\FawzyShared.csproj",
+        "projectPath": "C:\\FawzySource\\FawzyHApp\\FawzyShared\\FawzyShared.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}

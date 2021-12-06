@@ -15,7 +15,7 @@ namespace FawzyApp.Views
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-           Shell.Current.GoToAsync("PersonPage");
+           Shell.Current.GoToAsync("FormsPage");
            //Navigation.PushAsync()
         }
     }

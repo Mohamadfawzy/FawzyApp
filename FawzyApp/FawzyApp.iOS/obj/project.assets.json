@@ -1590,11 +1590,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\FawzySource\\FawzyApp\\FawzyApp\\FawzyApp.iOS\\FawzyApp.iOS.csproj",
+      "projectUniqueName": "C:\\FawzySource\\FawzyHApp\\FawzyApp\\FawzyApp.iOS\\FawzyApp.iOS.csproj",
       "projectName": "FawzyApp.iOS",
-      "projectPath": "C:\\FawzySource\\FawzyApp\\FawzyApp\\FawzyApp.iOS\\FawzyApp.iOS.csproj",
+      "projectPath": "C:\\FawzySource\\FawzyHApp\\FawzyApp\\FawzyApp.iOS\\FawzyApp.iOS.csproj",
       "packagesPath": "C:\\Users\\Programmer\\.nuget\\packages\\",
-      "outputPath": "C:\\FawzySource\\FawzyApp\\FawzyApp\\FawzyApp.iOS\\obj\\",
+      "outputPath": "C:\\FawzySource\\FawzyHApp\\FawzyApp\\FawzyApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1617,8 +1617,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\FawzySource\\FawzyApp\\FawzyApp\\FawzyApp\\FawzyApp.csproj": {
-              "projectPath": "C:\\FawzySource\\FawzyApp\\FawzyApp\\FawzyApp\\FawzyApp.csproj"
+            "C:\\FawzySource\\FawzyHApp\\FawzyApp\\FawzyApp\\FawzyApp.csproj": {
+              "projectPath": "C:\\FawzySource\\FawzyHApp\\FawzyApp\\FawzyApp\\FawzyApp.csproj"
             }
           }
         }

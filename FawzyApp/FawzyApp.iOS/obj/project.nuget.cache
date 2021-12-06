@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zMeBc4Ex/Kidng0lXcNPck+1KYNBHuoO4V5NjZ8HYpnByohDfsfmaodDR4kcquKbRhwRTxY0qePxSEw4rFFMcQ==",
+  "dgSpecHash": "qtuKGuGrM/0VMyRigNgU4xx3EEgEzTUJJW0MWtuJEq/Uurf46J8c34gr/Q7SXqFoJB/gCPkCH5hE/qx9K3Pgeg==",
   "success": true,
-  "projectFilePath": "C:\\FawzySource\\FawzyApp\\FawzyApp\\FawzyApp.iOS\\FawzyApp.iOS.csproj",
+  "projectFilePath": "C:\\FawzySource\\FawzyHApp\\FawzyApp\\FawzyApp.iOS\\FawzyApp.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Programmer\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
     "C:\\Users\\Programmer\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",

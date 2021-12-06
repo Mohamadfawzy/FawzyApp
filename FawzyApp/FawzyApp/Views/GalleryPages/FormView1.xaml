@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:FawzyApp.Views.GalleryPages.ViewModels"
+             x:Class="FawzyApp.Views.GalleryPages.FormView1">
+    <Grid>
+        <Label Text="View 1" />
+        <CollectionView ItemsSource="{Binding Items}"
+                        BackgroundColor="Bisque">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Label Text="{Binding Id}"
+                               TextColor="Gray" />
+                        <Label Text="{Binding  Text}"
+                               FontSize="20"
+                               TextColor="Black" />
+                        <Label Text="{Binding Description}" />
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        
+        <Grid.BindingContext>
+            <vm:FormView1VM />
+        </Grid.BindingContext>
+    </Grid>
+    
+</StackLayout>

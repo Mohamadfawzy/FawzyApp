@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\FawzySource\\FawzyApp\\APIFawzyApp\\APIFawzyApp.csproj": {}
+    "C:\\FawzySource\\FawzyHApp\\APIFawzyApp\\APIFawzyApp.csproj": {}
   },
   "projects": {
-    "C:\\FawzySource\\FawzyApp\\APIFawzyApp\\APIFawzyApp.csproj": {
+    "C:\\FawzySource\\FawzyHApp\\APIFawzyApp\\APIFawzyApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\FawzySource\\FawzyApp\\APIFawzyApp\\APIFawzyApp.csproj",
+        "projectUniqueName": "C:\\FawzySource\\FawzyHApp\\APIFawzyApp\\APIFawzyApp.csproj",
         "projectName": "APIFawzyApp",
-        "projectPath": "C:\\FawzySource\\FawzyApp\\APIFawzyApp\\APIFawzyApp.csproj",
+        "projectPath": "C:\\FawzySource\\FawzyHApp\\APIFawzyApp\\APIFawzyApp.csproj",
         "packagesPath": "C:\\Users\\Programmer\\.nuget\\packages\\",
-        "outputPath": "C:\\FawzySource\\FawzyApp\\APIFawzyApp\\obj\\",
+        "outputPath": "C:\\FawzySource\\FawzyHApp\\APIFawzyApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -34,8 +34,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\FawzySource\\FawzyApp\\FawzyShared\\FawzyShared.csproj": {
-                "projectPath": "C:\\FawzySource\\FawzyApp\\FawzyShared\\FawzyShared.csproj"
+              "C:\\FawzySource\\FawzyHApp\\FawzyShared\\FawzyShared.csproj": {
+                "projectPath": "C:\\FawzySource\\FawzyHApp\\FawzyShared\\FawzyShared.csproj"
               }
             }
           }
@@ -101,11 +101,11 @@
         }
       }
     },
-    "C:\\FawzySource\\FawzyApp\\FawzyShared\\FawzyShared.csproj": {
+    "C:\\FawzySource\\FawzyHApp\\FawzyShared\\FawzyShared.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\FawzySource\\FawzyApp\\FawzyShared\\FawzyShared.csproj",
+        "projectUniqueName": "C:\\FawzySource\\FawzyHApp\\FawzyShared\\FawzyShared.csproj",
         "projectName": "FawzyShared",
-        "projectPath": "C:\\FawzySource\\FawzyApp\\FawzyShared\\FawzyShared.csproj",
+        "projectPath": "C:\\FawzySource\\FawzyHApp\\FawzyShared\\FawzyShared.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}

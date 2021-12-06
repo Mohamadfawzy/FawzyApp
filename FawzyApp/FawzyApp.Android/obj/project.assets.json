@@ -3520,11 +3520,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\FawzySource\\FawzyApp\\FawzyApp\\FawzyApp.Android\\FawzyApp.Android.csproj",
+      "projectUniqueName": "C:\\FawzySource\\FawzyHApp\\FawzyApp\\FawzyApp.Android\\FawzyApp.Android.csproj",
       "projectName": "FawzyApp.Android",
-      "projectPath": "C:\\FawzySource\\FawzyApp\\FawzyApp\\FawzyApp.Android\\FawzyApp.Android.csproj",
+      "projectPath": "C:\\FawzySource\\FawzyHApp\\FawzyApp\\FawzyApp.Android\\FawzyApp.Android.csproj",
       "packagesPath": "C:\\Users\\Programmer\\.nuget\\packages\\",
-      "outputPath": "C:\\FawzySource\\FawzyApp\\FawzyApp\\FawzyApp.Android\\obj\\",
+      "outputPath": "C:\\FawzySource\\FawzyHApp\\FawzyApp\\FawzyApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3547,8 +3547,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\FawzySource\\FawzyApp\\FawzyApp\\FawzyApp\\FawzyApp.csproj": {
-              "projectPath": "C:\\FawzySource\\FawzyApp\\FawzyApp\\FawzyApp\\FawzyApp.csproj"
+            "C:\\FawzySource\\FawzyHApp\\FawzyApp\\FawzyApp\\FawzyApp.csproj": {
+              "projectPath": "C:\\FawzySource\\FawzyHApp\\FawzyApp\\FawzyApp\\FawzyApp.csproj"
             }
           }
         }

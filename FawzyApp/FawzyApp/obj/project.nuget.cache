@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qZWMEidalhvfjgE9o1ShrAYK9+luShMDY3Fg6mXjBaCRRaweusCUAWulPuZIpLbHjUKBq+oNIID31otCtng6aw==",
+  "dgSpecHash": "2QBgqdrJ5WPQaYJ18aZkhLBQglqnb6xty2/fSzDIdykigcRK87iprHgF1gEX2uJNWUL4jFXUqx2vw6njbcMjCg==",
   "success": true,
-  "projectFilePath": "C:\\FawzySource\\FawzyApp\\FawzyApp\\FawzyApp\\FawzyApp.csproj",
+  "projectFilePath": "C:\\FawzySource\\FawzyHApp\\FawzyApp\\FawzyApp\\FawzyApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Programmer\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
     "C:\\Users\\Programmer\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

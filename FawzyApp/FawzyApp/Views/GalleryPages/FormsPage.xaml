@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:form="clr-namespace:FawzyApp.Views.GalleryPages"
+             xmlns:vm="clr-namespace:FawzyApp.Views.GalleryPages.ViewModels"
+             x:Class="FawzyApp.Views.GalleryPages.FormsPage"
+             Padding="0">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <!-- 0 -->
+            <DataTemplate x:Key="formView1">
+                    <form:FormView1 />
+            </DataTemplate>
+            <!-- 1 -->
+            <DataTemplate x:Key="formView2">
+                    <form:FormView2 />
+            </DataTemplate>
+            <!-- 2 -->
+            <DataTemplate x:Key="formView3">
+                    <form:FormView3 />
+            </DataTemplate>
+
+            <form:FormDataTemplateSelector x:Key="formDataTemplateSelector"
+                                           Form0="{StaticResource formView1}"
+                                           Form1="{StaticResource formView2}"
+                                           Form2="{StaticResource formView3}" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.BindingContext>
+        <vm:FormsPageVM />
+    </ContentPage.BindingContext>
+    
+    <StackLayout Margin="0,20" >
+        <Label Text="ListView with a DataTemplateSelector"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+        
+        <CarouselView x:Name="cVForms" Position="{Binding CVFormsPosition, Mode=TwoWay}"
+                      HorizontalOptions="FillAndExpand"
+                      Loop="False"
+                      IsSwipeEnabled="False"
+                      ItemsSource="{Binding ListFormModel}"
+                      ItemTemplate="{StaticResource formDataTemplateSelector}" />
+        
+        <StackLayout Orientation="Horizontal"
+                     Margin="20,0">
+            <Button Text="Previous"
+                    CornerRadius="5"
+                    Command="{Binding PreviousCommand}">
+                <Button.Triggers>
+                    <DataTrigger TargetType="Button"
+                                 Binding="{Binding Source={x:Reference cVForms},
+                                       Path=Position}"
+                                 Value="0">
+                        <Setter Property="IsEnabled"
+                                Value="False" />
+                        <!-- multiple Setters elements are allowed -->
+                    </DataTrigger>
+                </Button.Triggers>
+            </Button>
+
+            <Button Text="Next "
+                    CornerRadius="5"
+                    Command="{Binding NextCommand}">
+                <Button.Triggers>
+                    <DataTrigger TargetType="Button"
+                                 Binding="{Binding Source={x:Reference cVForms},
+                                       Path=Position}"
+                                 Value="2">
+                        <Setter Property="IsEnabled"
+                                Value="False" />
+                        
+                        <!-- multiple Setters elements are allowed -->
+                    </DataTrigger>
+                </Button.Triggers>
+            </Button>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
