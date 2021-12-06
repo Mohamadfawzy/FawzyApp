@@ -4,11 +4,12 @@
              xmlns:form="clr-namespace:FawzyApp.Views.GalleryPages"
              xmlns:vm="clr-namespace:FawzyApp.Views.GalleryPages.ViewModels"
              x:Class="FawzyApp.Views.GalleryPages.FormsPage"
+             x:Name="this"
              Padding="0">
 
     <ContentPage.Resources>
         <ResourceDictionary>
-
+            <x:Int32 x:Key="CVcountResource">2</x:Int32>
             <!-- 0 -->
             <DataTemplate x:Key="formView1">
                     <form:FormView1 />
@@ -47,7 +48,10 @@
         
         <StackLayout Orientation="Horizontal"
                      Margin="20,0">
-            <Button Text="Previous"
+            
+            <!-- PREVIOUS -->
+            <Button x:Name="buttonPrevious" 
+                    Text="Previous"
                     CornerRadius="5"
                     Command="{Binding PreviousCommand}">
                 <Button.Triggers>
@@ -61,19 +65,18 @@
                     </DataTrigger>
                 </Button.Triggers>
             </Button>
-
-            <Button Text="Next "
+            
+            <!-- NEXT-->
+            <Button x:Name="buttonNext" Text="Next"
                     CornerRadius="5"
                     Command="{Binding NextCommand}">
                 <Button.Triggers>
                     <DataTrigger TargetType="Button"
                                  Binding="{Binding Source={x:Reference cVForms},
-                                       Path=Position}"
-                                 Value="2">
+                                       Path=Position , Mode=OneWay}"
+                                 Value="{StaticResource CVcountResource}">
                         <Setter Property="IsEnabled"
                                 Value="False" />
-                        
-                        <!-- multiple Setters elements are allowed -->
                     </DataTrigger>
                 </Button.Triggers>
             </Button>

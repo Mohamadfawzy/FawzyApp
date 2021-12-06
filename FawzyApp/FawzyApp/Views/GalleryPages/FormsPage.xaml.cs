@@ -12,11 +12,18 @@ namespace FawzyApp.Views.GalleryPages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FormsPage : ContentPage
     {
+        public int CVCount = 2;
         public FormsPage()
         {
             InitializeComponent();
             //BindingContext = this;
+        }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            buttonPrevious.IsEnabled = false;
+            //cVForms.Position = 0;
         }
     }
 }
