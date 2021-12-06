@@ -61,7 +61,6 @@
                                  Value="0">
                         <Setter Property="IsEnabled"
                                 Value="False" />
-                        <!-- multiple Setters elements are allowed -->
                     </DataTrigger>
                 </Button.Triggers>
             </Button>

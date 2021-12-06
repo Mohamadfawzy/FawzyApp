@@ -4,9 +4,7 @@
              xmlns:vm="clr-namespace:FawzyApp.Views.GalleryPages.ViewModels"
              x:Class="FawzyApp.Views.GalleryPages.FormView1">
     <Grid>
-        <Label Text="View 1" />
-        <CollectionView ItemsSource="{Binding Items}"
-                        BackgroundColor="Bisque">
+        <CollectionView ItemsSource="{Binding Items}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout>
