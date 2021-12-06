@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:FawzyApp.ViewModels"
+             x:Class="FawzyApp.Views.StudentsPage"
+>
+    
+    <ContentPage.BindingContext>
+        <vm:StudentsPageVM />
+    </ContentPage.BindingContext>
+    <Shell.TitleView>
+        <StackLayout HorizontalOptions="FillAndExpand"
+                     VerticalOptions="FillAndExpand">
+            <Label Text="+"
+                   Padding="10"
+                   FontSize="20"
+                   HorizontalOptions="EndAndExpand"
+                   VerticalOptions="CenterAndExpand">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </Shell.TitleView>
+    
+    
+    <ContentPage.Content>
+        <Grid RowDefinitions="50,*">
+            
+            <!-- HEADER-->
+            <StackLayout BackgroundColor="Crimson"
+                         HeightRequest="50">
+                
+            </StackLayout>
+            <ScrollView Grid.Row="1">
+                <StackLayout BindableLayout.ItemsSource="{Binding Students}"
+                             x:Name="stackStudents">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout BackgroundColor="WhiteSmoke"
+                                         Padding="10"
+                                         Orientation="Horizontal">
+                                <Label Text="{Binding Name}"
+                                       FontSize="20"
+                                       TextColor="Black"/>
+                                <Label Text="{Binding Phones, StringFormat='Number: {0}'}"
+                                       FontSize="15"
+                                       VerticalOptions="Center"
+                                       TextColor="CadetBlue" />
+                                <Label Text="X"
+                                       HorizontalOptions="EndAndExpand"
+                                       FontSize="20">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding BindingContext.DeleteStudentCommand, Source={x:Reference Name=stackStudents}}"
+                                                              CommandParameter="{Binding .}" />
+                                    </Label.GestureRecognizers>
+                                </Label>
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding BindingContext.StudentDelailsCommand, Source={x:Reference Name=stackStudents}}"
+                                                          CommandParameter="{Binding .}" />
+                                </StackLayout.GestureRecognizers>
+                            </StackLayout>
+                            
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

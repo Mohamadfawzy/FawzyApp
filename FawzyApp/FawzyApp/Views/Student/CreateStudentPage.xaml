@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:FawzyApp.ViewModels.StudentVM"
+             x:Class="FawzyApp.Views.Student.CreateStudentPage"
+             Shell.PresentationMode="ModalAnimated">
+    
+    <ContentPage.BindingContext>
+        <vm:CreateStudentPageVM />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <Grid RowDefinitions="50,*,200">
+            
+            <!-- HEADER -->
+            <StackLayout BackgroundColor="Crimson"
+                         HeightRequest="50">
+                
+            </StackLayout>
+            
+             <!-- Row 1 -->
+            <StackLayout BindingContext="{Binding Student}"
+                         Grid.Row="1">
+                <Entry Placeholder="Enter Name"
+                       Text="{Binding Name, Mode=OneWayToSource}"/>
+                <Entry Placeholder="Enter Value"
+                       Text="{Binding Phones, Mode=OneWayToSource}"/>
+                <Entry Placeholder="Enter Value"
+                       Text="{Binding SSD, Mode=OneWayToSource}"/>
+            </StackLayout>
+            
+            <!-- Row 2 -->
+            <StackLayout Grid.Row="2">
+                <Button Text="Save"
+                        Command="{Binding SaveNewStudentCommand}" />
+                
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
