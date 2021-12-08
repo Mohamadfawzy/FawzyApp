@@ -4,3 +4,9 @@ C:\FawzySource\FawzyApp\FawzyShared\obj\Debug\FawzyShared.csproj.AssemblyReferen
 C:\FawzySource\FawzyApp\FawzyShared\obj\Debug\FawzyShared.csproj.CoreCompileInputs.cache
 C:\FawzySource\FawzyApp\FawzyShared\obj\Debug\FawzyShared.dll
 C:\FawzySource\FawzyApp\FawzyShared\obj\Debug\FawzyShared.pdb
+C:\FawzySource\FawzyHApp\FawzyShared\bin\Debug\FawzyShared.dll
+C:\FawzySource\FawzyHApp\FawzyShared\bin\Debug\FawzyShared.pdb
+C:\FawzySource\FawzyHApp\FawzyShared\obj\Debug\FawzyShared.csproj.CoreCompileInputs.cache
+C:\FawzySource\FawzyHApp\FawzyShared\obj\Debug\FawzyShared.dll
+C:\FawzySource\FawzyHApp\FawzyShared\obj\Debug\FawzyShared.pdb
+C:\FawzySource\FawzyHApp\FawzyShared\obj\Debug\FawzyShared.csproj.AssemblyReference.cache

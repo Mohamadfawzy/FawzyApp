@@ -65,6 +65,6 @@ C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp\obj\Debug\netstandard2.0\FawzyApp.dll
 C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp\obj\Debug\netstandard2.0\ref\FawzyApp.dll
 C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp\obj\Debug\netstandard2.0\FawzyApp.pdb
 C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp\obj\Debug\netstandard2.0\Views\GalleryPages\FormsPage.xaml.g.cs
-C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp\obj\Debug\netstandard2.0\Views\GalleryPages\FormView1.xaml.g.cs
-C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp\obj\Debug\netstandard2.0\Views\GalleryPages\FormView2.xaml.g.cs
-C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp\obj\Debug\netstandard2.0\Views\GalleryPages\FormView3.xaml.g.cs
+C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp\obj\Debug\netstandard2.0\Views\GalleryPages\FormsViews\FormView1.xaml.g.cs
+C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp\obj\Debug\netstandard2.0\Views\GalleryPages\FormsViews\FormView2.xaml.g.cs
+C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp\obj\Debug\netstandard2.0\Views\GalleryPages\FormsViews\FormView3.xaml.g.cs

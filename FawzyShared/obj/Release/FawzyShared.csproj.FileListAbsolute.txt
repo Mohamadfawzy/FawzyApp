@@ -1,0 +1,6 @@
+C:\FawzySource\FawzyHApp\FawzyShared\bin\Release\FawzyShared.dll
+C:\FawzySource\FawzyHApp\FawzyShared\bin\Release\FawzyShared.pdb
+C:\FawzySource\FawzyHApp\FawzyShared\obj\Release\FawzyShared.csproj.AssemblyReference.cache
+C:\FawzySource\FawzyHApp\FawzyShared\obj\Release\FawzyShared.csproj.CoreCompileInputs.cache
+C:\FawzySource\FawzyHApp\FawzyShared\obj\Release\FawzyShared.dll
+C:\FawzySource\FawzyHApp\FawzyShared\obj\Release\FawzyShared.pdb

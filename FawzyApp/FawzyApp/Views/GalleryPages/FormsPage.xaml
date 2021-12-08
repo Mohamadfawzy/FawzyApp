@@ -1,9 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:form="clr-namespace:FawzyApp.Views.GalleryPages"
              xmlns:vm="clr-namespace:FawzyApp.Views.GalleryPages.ViewModels"
+             xmlns:form="clr-namespace:FawzyApp.Views.GalleryPages"
              x:Class="FawzyApp.Views.GalleryPages.FormsPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="WhiteSmoke"
              x:Name="this"
              Padding="0">
 
@@ -12,15 +14,15 @@
             <x:Int32 x:Key="CVcountResource">2</x:Int32>
             <!-- 0 -->
             <DataTemplate x:Key="formView1">
-                    <form:FormView1 />
+                <form:FormView1 />
             </DataTemplate>
             <!-- 1 -->
             <DataTemplate x:Key="formView2">
-                    <form:FormView2 />
+                <form:FormView2 />
             </DataTemplate>
             <!-- 2 -->
             <DataTemplate x:Key="formView3">
-                    <form:FormView3 />
+                <form:FormView3 />
             </DataTemplate>
 
             <form:FormDataTemplateSelector x:Key="formDataTemplateSelector"
@@ -33,24 +35,33 @@
     <ContentPage.BindingContext>
         <vm:FormsPageVM />
     </ContentPage.BindingContext>
-    
-    <StackLayout Margin="0,20" >
-        <Label Text="ListView with a DataTemplateSelector"
-               FontAttributes="Bold"
-               HorizontalOptions="Center" />
+
+    <Grid Margin="0"
+          RowDefinitions="60,*,80"
+          RowSpacing="0">
         
-        <CarouselView x:Name="cVForms" Position="{Binding CVFormsPosition, Mode=TwoWay}"
-                      HorizontalOptions="FillAndExpand"
-                      Loop="False"
-                      IsSwipeEnabled="False"
-                      ItemsSource="{Binding ListFormModel}"
-                      ItemTemplate="{StaticResource formDataTemplateSelector}" />
+        <!-- Header -->
+        <StackLayout x:Name="header"
+                     BackgroundColor="Crimson"
+                     Grid.Row="0">
+            <Label Text="Header"
+                   VerticalOptions="CenterAndExpand"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+        </StackLayout>
         
-        <StackLayout Orientation="Horizontal"
-                     Margin="20,0">
-            
+        
+        <!-- Footer -->
+        <StackLayout x:Name="footer"
+                     Orientation="Horizontal"
+                     Grid.Row="2"
+                     Padding="20,0"
+                     Spacing="15"
+                     BackgroundColor="Crimson">
+
             <!-- PREVIOUS -->
-            <Button x:Name="buttonPrevious" 
+            <Button x:Name="buttonPrevious"
+                    VerticalOptions="Center"
                     Text="Previous"
                     CornerRadius="5"
                     Command="{Binding PreviousCommand}">
@@ -64,9 +75,11 @@
                     </DataTrigger>
                 </Button.Triggers>
             </Button>
-            
+
             <!-- NEXT-->
-            <Button x:Name="buttonNext" Text="Next"
+            <Button x:Name="buttonNext"
+                    Text="Next"
+                    VerticalOptions="Center"
                     CornerRadius="5"
                     Command="{Binding NextCommand}">
                 <Button.Triggers>
@@ -80,5 +93,24 @@
                 </Button.Triggers>
             </Button>
         </StackLayout>
-    </StackLayout>
+        
+        <!-- flyout -->
+        <StackLayout Grid.Row="0"
+                     x:Name="shado"
+                     IsVisible="false"
+                     Grid.RowSpan="3"
+                     BackgroundColor="{StaticResource Shado}"
+                     HorizontalOptions="FillAndExpand"
+                     VerticalOptions="FillAndExpand" />
+        <!-- Gallery -->
+        <CarouselView x:Name="cVForms"
+                      Grid.Row="1"
+                      Position="{Binding CVFormsPosition, Mode=TwoWay}"
+                      HorizontalOptions="FillAndExpand"
+                      Loop="False"
+                      IsSwipeEnabled="False"
+                      ItemsSource="{Binding ListFormModel}"
+                      ItemTemplate="{StaticResource formDataTemplateSelector}" />
+
+    </Grid>
 </ContentPage>
