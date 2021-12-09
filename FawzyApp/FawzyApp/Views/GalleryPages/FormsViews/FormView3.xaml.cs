@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Plugin.AudioRecorder;
+using Xamarin.Essentials;
+using System.IO;
+
 namespace FawzyApp.Views.GalleryPages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -14,24 +17,37 @@ namespace FawzyApp.Views.GalleryPages
     {
         AudioRecorderService recorder;
         AudioPlayer player;
+        string localPath = "";
+
+        public List<string> ListVoice { get; set; } = new List<string>();
         public FormView3()
         {
             InitializeComponent();
 
+            localPath = FileSystem.AppDataDirectory;
             recorder = new AudioRecorderService
             {
                 StopRecordingAfterTimeout = true,
-                TotalAudioTimeout = TimeSpan.FromSeconds(15),
-                AudioSilenceTimeout = TimeSpan.FromSeconds(2)
+                TotalAudioTimeout = TimeSpan.FromSeconds(30),
+                AudioSilenceTimeout = TimeSpan.FromSeconds(10)
             };
 
             player = new AudioPlayer();
             player.FinishedPlaying += Player_FinishedPlaying;
+
+            GetAllFilseName();
+
+
         }
 
 
         async void Record_Clicked(object sender, EventArgs e)
         {
+
+            var status = await Permissions.RequestAsync<Permissions.Microphone>();
+            if (status != PermissionStatus.Granted) return;
+
+
             await RecordAudio();
         }
 
@@ -85,6 +101,13 @@ namespace FawzyApp.Views.GalleryPages
             {
                 var filePath = recorder.GetAudioFilePath();
 
+                //cachedStream = new MemoryStream(File.ReadAllBytes(filePath));
+                //FileStream file = new FileStream(localPath, FileMode.Create, FileAccess.Write);
+                //cachedStream.WriteTo(file);
+                //file.Close();
+                //cachedStream.Close();
+
+                //var filePath = localPath;
                 if (filePath != null)
                 {
                     PlayButton.IsEnabled = false;
@@ -92,6 +115,7 @@ namespace FawzyApp.Views.GalleryPages
 
                     player.Play(filePath);
                 }
+
             }
             catch (Exception ex)
             {
@@ -106,7 +130,70 @@ namespace FawzyApp.Views.GalleryPages
             RecordButton.IsEnabled = true;
         }
 
+        // moved
+        private MemoryStream cachedStream;
+        private void SaveVoice_Clicked(object sender, EventArgs e)
+        {
+            var fullPath = Path.Combine(localPath, "FawzyVoices");
+            var filePath = recorder.GetAudioFilePath();
+            var fileName = "voice" + Guid.NewGuid();
+
+            DirectoryInfo dir = new DirectoryInfo(fullPath);
+            dir.Create();
+
+            cachedStream = new MemoryStream(File.ReadAllBytes(filePath));
+            FileStream file = new FileStream(Path.Combine(fullPath, fileName), FileMode.Create, FileAccess.Write);
+            cachedStream.WriteTo(file);
+            file.Close();
+            cachedStream.Close();
+
+            OnPropertyChanged("collectionVoice");
+
+        }
+        string CurrentVoice = "";
+        private void PlayVoice_Clicked(object s, EventArgs e)
+        {
+            var fullPath = Path.Combine(localPath, "FawzyVoices");
+            DirectoryInfo dir = new DirectoryInfo(fullPath);
+
+            if (!string.IsNullOrEmpty(CurrentVoice))
+            {
+                // var files = dir.GetFiles();
+                var voice = Path.Combine(fullPath, CurrentVoice);
+                player.Play(voice);
+            }
+            //
+            //voiceFullName = file.FullName;
+        }
+
+        private void collectionVoice_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            CurrentVoice = e.CurrentSelection.FirstOrDefault().ToString();
+        }
 
 
+        private Task<bool> GetAllFilseName()
+        {
+            try
+            {
+                var fullPath = Path.Combine(localPath, "FawzyVoices");
+                DirectoryInfo dir = new DirectoryInfo(fullPath);
+                var listFiles = dir.GetFiles();
+
+                foreach (var voiceName in listFiles)
+                {
+                    ListVoice.Add(voiceName.Name);
+                }
+                collectionVoice.ItemsSource = ListVoice;
+                OnPropertyChanged("collectionVoice");
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            return Task.FromResult(true);
+        }
     }
 }

@@ -5,7 +5,7 @@
              BackgroundColor="Gray">
 
       <StackLayout>
-        <StackLayout Padding="20,80,20,0"
+        <StackLayout Padding="20,20,20,0"
                      Orientation="Vertical"
                      Spacing="15">
             <StackLayout Orientation="Horizontal">
@@ -24,6 +24,46 @@
                     HorizontalOptions="FillAndExpand"
                     Clicked="Play_Clicked"
                     IsEnabled="False" />
+
+            <CollectionView x:Name="collectionVoice"
+                            BackgroundColor="White"
+                            SelectionMode="Single"
+                            SelectionChanged="collectionVoice_SelectionChanged">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal" />
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <StackLayout HeightRequest="100"
+                                         WidthRequest="120"
+                                         HorizontalOptions="Start"
+                                         VerticalOptions="Start"
+                                         Margin="5,0,0,0"
+                                         BackgroundColor="WhiteSmoke">
+                                <Label Text="{Binding .}"
+                                       FontSize="20"
+                                       TextColor="Black" />
+
+                            </StackLayout>
+                            
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            
+            <!-- -->
+            
+            <Button Text="SaveVoice_Clicked"
+                    FontSize="24"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="SaveVoice_Clicked" />
+            
+            <Button Text="PlayVoice_Clicked "
+                    Clicked="PlayVoice_Clicked"
+                    FontSize="24" />
+            
         </StackLayout>
 
     </StackLayout>
