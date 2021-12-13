@@ -50,6 +50,8 @@
                         TextColor="White" />
                 <Button Text="Go to Data Selector"
                         Clicked="Button_Clicked" />
+                <Button Text="ShapesPage"
+                        Clicked="Button_Clicked_1" />
             </StackLayout>
             
         </ScrollView>

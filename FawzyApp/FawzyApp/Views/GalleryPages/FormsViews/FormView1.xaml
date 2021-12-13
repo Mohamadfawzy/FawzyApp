@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <StackLayout xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:vm="clr-namespace:FawzyApp.Views.GalleryPages.ViewModels"
-             x:Class="FawzyApp.Views.GalleryPages.FormView1">
+             x:Class="FawzyApp.Views.GalleryPages.FormView1"
+             xmlns:vm="clr-namespace:FawzyApp.ViewModels.GalleryPagesVM">
     <Grid>
         <CollectionView ItemsSource="{Binding Items}">
             <CollectionView.ItemTemplate>

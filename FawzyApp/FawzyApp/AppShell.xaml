@@ -2,6 +2,7 @@
 <Shell xmlns="http://xamarin.com/schemas/2014/forms" 
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:FawzyApp.Views"
+       xmlns:procutesPage="clr-namespace:FawzyApp.Views.Product"
        Title="FawzyApp"
        x:Class="FawzyApp.AppShell">
 
@@ -88,6 +89,11 @@
                 Icon="icon_feed.png">
         <ShellContent Route="StudentsPage"
                       ContentTemplate="{DataTemplate local:StudentsPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Products"
+                Icon="icon_feed.png">
+        <ShellContent Route="ProductsPage"
+                      ContentTemplate="{DataTemplate procutesPage:ProductsPage}" />
     </FlyoutItem>
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->

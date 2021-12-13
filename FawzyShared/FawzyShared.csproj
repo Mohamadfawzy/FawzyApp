@@ -45,6 +45,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Models\Courses.cs" />
     <Compile Include="Models\LoginResponse.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ResponseResult.cs" />
     <Compile Include="Models\Students.cs" />
     <Compile Include="Models\Students_Courses.cs" />

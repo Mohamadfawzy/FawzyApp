@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:FawzyApp.ViewModels.ProductVM"
+             x:Class="FawzyApp.Views.Product.ProductsPage"
+             BackgroundColor="WhiteSmoke">
+    
+    <ContentPage.BindingContext>
+        <vm:ProductsPageVM />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <Grid>
+            
+            <CollectionView x:Name="collectionProducts"
+                            ItemsSource="{Binding Products}"
+                            RemainingItemsThreshold="2"
+                            RemainingItemsThresholdReachedCommand="{Binding RemainingItemsCommand}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout HeightRequest="200"
+                                     BackgroundColor="White">
+                            <Label Text="{Binding Title}" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

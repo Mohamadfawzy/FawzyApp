@@ -47,6 +47,24 @@ namespace FawzyApp.Services.RequestProvider
             return default(TResult);// await Task.FromResult(default(TResult));
         }
 
+        // get range
+        public async Task<TResult> GetRangeAsync<TResult>(string uri,int skipe, int take, string token = "")
+        {
+            TResult result;
+            try
+            {
+                var json = await client.GetAsync(uri);
+                var content = await json.Content.ReadAsStringAsync();
+                result = JsonConvert.DeserializeObject<TResult>(content);
+                return result;
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex);
+            }
+            return default(TResult);// await Task.FromResult(default(TResult));
+        }
         public async Task<TResult> GetOneAsync<TResult>(string uri, Guid id, string token = "")
         {
             try

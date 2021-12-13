@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:vm="clr-namespace:FawzyApp.Views.GalleryPages.ViewModels"
              xmlns:form="clr-namespace:FawzyApp.Views.GalleryPages"
+             xmlns:vm="clr-namespace:FawzyApp.ViewModels.GalleryPagesVM"
              x:Class="FawzyApp.Views.GalleryPages.FormsPage"
              Shell.NavBarIsVisible="False"
              BackgroundColor="WhiteSmoke"

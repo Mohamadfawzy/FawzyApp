@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FawzyApp.Views.ShapesPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Path Stroke="Black"
+                  Fill="Black"
+                  BackgroundColor="Sienna"
+                  Aspect="Uniform"
+                  VerticalOptions="EndAndExpand"
+                  Margin="0,0,0,-4"
+                  StrokeThickness="2"
+                  HorizontalOptions="Fill"
+                  Data="M539.242 0.5H892.5V91.5H4.5V0.5H357.758C362.705 0.5 366.823 4.31268 367.813 9.22772C370.513 22.6385 377.148 39.4498 389.882 52.9162C402.629 66.3959 421.465 76.5 448.5 76.5C475.535 76.5 494.371 66.3959 507.118 52.9162C519.852 39.4498 526.487 22.6385 529.187 9.22773C530.177 4.31268 534.295 0.5 539.242 0.5Z">
+                
+            </Path>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

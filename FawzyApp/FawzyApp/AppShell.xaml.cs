@@ -3,6 +3,7 @@ using FawzyApp.Views;
 using FawzyApp.Views.AppDataTemplate;
 using FawzyApp.Views.GalleryPages;
 using FawzyApp.Views.Student;
+using FawzyApp.Views.XBook;
 using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
@@ -21,6 +22,7 @@ namespace FawzyApp
             Routing.RegisterRoute(nameof(CreateStudentPage), typeof(CreateStudentPage));
             Routing.RegisterRoute(nameof(StudentDetailsPage), typeof(StudentDetailsPage));
             Routing.RegisterRoute(nameof(FormsPage), typeof(FormsPage));
+            Routing.RegisterRoute(nameof(ShapesPage), typeof(ShapesPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)

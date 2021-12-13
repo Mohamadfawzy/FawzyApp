@@ -31,6 +31,10 @@ namespace APIFawzyApp.Services
                     eb =>
                     {
                         eb.ToTable("Students_Courses");
+                    }).Entity<Product>(
+                    eb =>
+                    {
+                        eb.ToTable("Products");
                     });
         }
 
@@ -38,5 +42,6 @@ namespace APIFawzyApp.Services
         public DbSet<Courses> Courses { get; set; }
         public DbSet<Students> Students { get; set; }
         public DbSet<Students_Courses> Students_Courses { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }

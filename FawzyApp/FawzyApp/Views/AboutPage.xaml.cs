@@ -18,5 +18,11 @@ namespace FawzyApp.Views
            Shell.Current.GoToAsync("FormsPage");
            //Navigation.PushAsync()
         }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+            Shell.Current.GoToAsync("ShapesPage");
+
+        }
     }
 }

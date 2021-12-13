@@ -68,3 +68,6 @@ C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp\obj\Debug\netstandard2.0\Views\Galler
 C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp\obj\Debug\netstandard2.0\Views\GalleryPages\FormsViews\FormView1.xaml.g.cs
 C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp\obj\Debug\netstandard2.0\Views\GalleryPages\FormsViews\FormView2.xaml.g.cs
 C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp\obj\Debug\netstandard2.0\Views\GalleryPages\FormsViews\FormView3.xaml.g.cs
+C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp\obj\Debug\netstandard2.0\Views\XBook\ImageBrowserPage.xaml.g.cs
+C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp\obj\Debug\netstandard2.0\Views\ShapesPage.xaml.g.cs
+C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp\obj\Debug\netstandard2.0\Views\Product\ProductsPage.xaml.g.cs
