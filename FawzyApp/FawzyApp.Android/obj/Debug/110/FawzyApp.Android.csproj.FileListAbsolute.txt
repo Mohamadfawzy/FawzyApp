@@ -1344,3 +1344,7 @@ C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp.Android\obj\Debug\110\lp\102\jl\files
 C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp.Android\obj\Debug\110\lp\107\jl\files.cache
 C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp.Android\obj\Debug\110\android\assets\Plugin.AudioRecorder.dll
 C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp.Android\obj\Debug\110\android\assets\Plugin.AudioRecorder.dll.mdb
+C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp.Android\bin\Debug\FawzyShared.dll.config
+C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp.Android\obj\Debug\110\android\assets\FawzyShared.dll.config
+C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp.Android\obj\Debug\110\stamp\_CopyConfigFiles.stamp
+C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp.Android\obj\Debug\110\android\assets\RestSharp.dll

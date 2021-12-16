@@ -17,5 +17,9 @@ namespace FawzyApp.Views.Product
             InitializeComponent();
         }
 
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            Shell.Current.GoToAsync("CreateProductPage");
+        }
     }
 }

@@ -4,15 +4,28 @@
              xmlns:vm="clr-namespace:FawzyApp.ViewModels.ProductVM"
              x:Class="FawzyApp.Views.Product.ProductsPage"
              BackgroundColor="WhiteSmoke">
-    
+
     <ContentPage.BindingContext>
         <vm:ProductsPageVM />
     </ContentPage.BindingContext>
-    
+
     <ContentPage.Content>
-        <Grid>
+        <Grid RowDefinitions="50,*">
             
+            <StackLayout HeightRequest="50"
+                         VerticalOptions="Start"
+                         Margin="20,10"
+                         BackgroundColor="Bisque">
+                <Label Text="+"
+                       FontSize="22"
+                       InputTransparent="True" />
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+
             <CollectionView x:Name="collectionProducts"
+                            Grid.Row="1"
                             ItemsSource="{Binding Products}"
                             RemainingItemsThreshold="2"
                             RemainingItemsThresholdReachedCommand="{Binding RemainingItemsCommand}">
@@ -25,7 +38,7 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-            
+
         </Grid>
     </ContentPage.Content>
 </ContentPage>

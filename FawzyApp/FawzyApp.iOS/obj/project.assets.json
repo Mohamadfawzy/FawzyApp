@@ -35,6 +35,15 @@
           "lib/xamarinios10/Plugin.AudioRecorder.dll": {}
         }
       },
+      "RestSharp/106.15.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
       "Rg.Plugins.Popup/2.0.0.14": {
         "type": "package",
         "dependencies": {
@@ -247,6 +256,7 @@
           "FawzyShared": "1.0.0",
           "Newtonsoft.Json": "13.0.1",
           "Plugin.AudioRecorder": "1.1.0",
+          "RestSharp": "106.15.0",
           "Rg.Plugins.Popup": "2.0.0.14",
           "Xamarin.CommunityToolkit": "1.3.0",
           "Xamarin.Essentials": "1.7.0",
@@ -304,6 +314,15 @@
           "lib/xamarinios10/Plugin.AudioRecorder.dll": {}
         }
       },
+      "RestSharp/106.15.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
       "Rg.Plugins.Popup/2.0.0.14": {
         "type": "package",
         "dependencies": {
@@ -516,6 +535,7 @@
           "FawzyShared": "1.0.0",
           "Newtonsoft.Json": "13.0.1",
           "Plugin.AudioRecorder": "1.1.0",
+          "RestSharp": "106.15.0",
           "Rg.Plugins.Popup": "2.0.0.14",
           "Xamarin.CommunityToolkit": "1.3.0",
           "Xamarin.Essentials": "1.7.0",
@@ -573,6 +593,15 @@
           "lib/xamarinios10/Plugin.AudioRecorder.dll": {}
         }
       },
+      "RestSharp/106.15.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
       "Rg.Plugins.Popup/2.0.0.14": {
         "type": "package",
         "dependencies": {
@@ -785,6 +814,7 @@
           "FawzyShared": "1.0.0",
           "Newtonsoft.Json": "13.0.1",
           "Plugin.AudioRecorder": "1.1.0",
+          "RestSharp": "106.15.0",
           "Rg.Plugins.Popup": "2.0.0.14",
           "Xamarin.CommunityToolkit": "1.3.0",
           "Xamarin.Essentials": "1.7.0",
@@ -842,6 +872,15 @@
           "lib/xamarinios10/Plugin.AudioRecorder.dll": {}
         }
       },
+      "RestSharp/106.15.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
       "Rg.Plugins.Popup/2.0.0.14": {
         "type": "package",
         "dependencies": {
@@ -1054,6 +1093,7 @@
           "FawzyShared": "1.0.0",
           "Newtonsoft.Json": "13.0.1",
           "Plugin.AudioRecorder": "1.1.0",
+          "RestSharp": "106.15.0",
           "Rg.Plugins.Popup": "2.0.0.14",
           "Xamarin.CommunityToolkit": "1.3.0",
           "Xamarin.Essentials": "1.7.0",
@@ -1159,6 +1199,22 @@
         "lib/xamarinios10/Plugin.AudioRecorder.pdb",
         "plugin.audiorecorder.1.1.0.nupkg.sha512",
         "plugin.audiorecorder.nuspec"
+      ]
+    },
+    "RestSharp/106.15.0": {
+      "sha512": "HM7ohR6AscxedNenrrl93DSZG6hvdnA7O+NHyCl/6ZKTfn8psQ9rRmUpcb9eWr+140vmfxoVemql0bUoeGEW3A==",
+      "type": "package",
+      "path": "restsharp/106.15.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/RestSharp.dll",
+        "lib/net452/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.106.15.0.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
       ]
     },
     "Rg.Plugins.Popup/2.0.0.14": {

@@ -31,16 +31,24 @@ namespace FawzyApp.ViewModels.ProductVM
 
         private async void GetProducts()
         {
-            // http://192.168.99.13:5005/api/Products/getRange/0/10
-            var fullPath = Path.Combine("Products/getRange", skip.ToString(), take.ToString());
-
-            var result = await requestProvider.GetListAsync<List<Product>>(fullPath);
-            result.OrderBy(p=>p.Title);
-            foreach(var item in result)
+            try
             {
-                Products.Add(item);
+                // http://192.168.99.13:5005/api/Products/getRange/0/10
+                var fullPath = Path.Combine("Products/getRange", skip.ToString(), take.ToString());
+
+                var result = await requestProvider.GetListAsync<List<Product>>(fullPath);
+                result.OrderBy(p => p.Title);
+                foreach (var item in result)
+                {
+                    Products.Add(item);
+                }
+                skip += 10;
             }
-            skip += 10;
+            catch (Exception)
+            {
+
+               
+            }
             //OnPropertyChanged("Products");
         }
 

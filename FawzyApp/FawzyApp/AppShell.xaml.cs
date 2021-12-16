@@ -2,6 +2,7 @@
 using FawzyApp.Views;
 using FawzyApp.Views.AppDataTemplate;
 using FawzyApp.Views.GalleryPages;
+using FawzyApp.Views.Product;
 using FawzyApp.Views.Student;
 using FawzyApp.Views.XBook;
 using System;
@@ -23,6 +24,7 @@ namespace FawzyApp
             Routing.RegisterRoute(nameof(StudentDetailsPage), typeof(StudentDetailsPage));
             Routing.RegisterRoute(nameof(FormsPage), typeof(FormsPage));
             Routing.RegisterRoute(nameof(ShapesPage), typeof(ShapesPage));
+            Routing.RegisterRoute(nameof(CreateProductPage), typeof(CreateProductPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)

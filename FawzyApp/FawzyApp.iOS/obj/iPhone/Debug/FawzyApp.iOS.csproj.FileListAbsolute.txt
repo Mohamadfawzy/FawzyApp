@@ -136,3 +136,4 @@ C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp.iOS\obj\iPhone\Debug\FawzyApp.iOS.csp
 C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp.iOS\obj\iPhone\Debug\FawzyApp.iOS.csproj.CopyComplete
 C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp.iOS\obj\iPhone\Debug\FawzyApp.iOS.exe
 C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp.iOS\obj\iPhone\Debug\FawzyApp.iOS.pdb
+C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp.iOS\bin\iPhone\Debug\FawzyShared.dll.config

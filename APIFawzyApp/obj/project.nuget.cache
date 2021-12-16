@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BWKn+hJGKG1NiHkwrYGDyWrvb86VTWhg6Gz78oy+cyOO/ITBGo6bdD+fvzoHyXbjhDYuEl9q5MyCW3ezMXvvUQ==",
+  "dgSpecHash": "/9jeN8BO43TolKjqv8v3RB3dVBVX9a0XI86mtvDUHQfd1tKtGtJCoOjAOVXlyM4qjdLGMeePpWXbyJfLw0PcPA==",
   "success": true,
   "projectFilePath": "C:\\FawzySource\\FawzyHApp\\APIFawzyApp\\APIFawzyApp.csproj",
   "expectedPackageFiles": [
@@ -38,6 +38,7 @@
     "C:\\Users\\Programmer\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Programmer\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Programmer\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Programmer\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Programmer\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\Programmer\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\Programmer\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
