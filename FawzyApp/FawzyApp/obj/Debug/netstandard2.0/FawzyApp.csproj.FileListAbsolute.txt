@@ -73,3 +73,4 @@ C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp\obj\Debug\netstandard2.0\Views\Shapes
 C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp\obj\Debug\netstandard2.0\Views\Product\ProductsPage.xaml.g.cs
 C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp\bin\Debug\netstandard2.0\FawzyShared.dll.config
 C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp\obj\Debug\netstandard2.0\Views\Product\CreateProductPage.xaml.g.cs
+C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp\obj\Debug\netstandard2.0\Views\NotepadPages\NotepadMainPage.xaml.g.cs

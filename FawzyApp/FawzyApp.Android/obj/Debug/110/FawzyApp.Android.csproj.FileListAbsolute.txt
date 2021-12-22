@@ -1348,3 +1348,4 @@ C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp.Android\bin\Debug\FawzyShared.dll.con
 C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp.Android\obj\Debug\110\android\assets\FawzyShared.dll.config
 C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp.Android\obj\Debug\110\stamp\_CopyConfigFiles.stamp
 C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp.Android\obj\Debug\110\android\assets\RestSharp.dll
+C:\FawzySource\FawzyHApp\FawzyApp\FawzyApp.Android\obj\Debug\110\android\src\crc6410ec227480b24243\CustomEntryRenderer.java

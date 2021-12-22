@@ -12,6 +12,8 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
+using System.Dynamic;
+
 namespace APIFawzyApp.Controllers
 {
     [Authorize]
@@ -25,6 +27,22 @@ namespace APIFawzyApp.Controllers
         {
             _configuration = configuration;
         }
+
+        [AllowAnonymous]
+        [HttpGet]
+        public IActionResult LearnCode()
+        {
+            dynamic d = new ExpandoObject();
+
+            d.ID = "23894 yfh";
+            d.Name = "Mohamed Fawzy";
+            d.Age = 34;
+
+            return Ok(d);
+        }
+
+
+
 
         [AllowAnonymous]
         [HttpPost]
@@ -48,8 +66,6 @@ namespace APIFawzyApp.Controllers
                 UserName = request.UserName
             });
         }
-
-       
 
         // this method generate Token;
         private string GenerateJwtToken(string username, List<string> roles)

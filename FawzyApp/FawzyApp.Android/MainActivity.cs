@@ -4,6 +4,8 @@ using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
+using Xamarin.Forms;
+using Android.Views;
 
 namespace FawzyApp.Droid
 {
@@ -34,13 +36,40 @@ namespace FawzyApp.Droid
                 // Do something if there are not any pages in the `PopupStack`
             }
         }
-
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+
+        #region this code implement => How to keep soft keyboard always open in Xamarin Forms
+        private bool _lieAboutCurrentFocus;
+        public override bool DispatchTouchEvent(MotionEvent ev)
+        {
+            var focused = CurrentFocus;
+            bool customEntryRendererFocused = focused != null && focused.Parent is CustomEntryRenderer;
+
+            _lieAboutCurrentFocus = customEntryRendererFocused;
+            var result = base.DispatchTouchEvent(ev);
+            _lieAboutCurrentFocus = false;
+            return result;
+        }
+        public override Android.Views.View CurrentFocus
+        {
+            get
+            {
+                if (_lieAboutCurrentFocus)
+                {
+                    return null;
+                }
+
+                return base.CurrentFocus;
+            }
+        }
+        #endregion
+
+
 
     }
 }

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:enty="clr-namespace:FawzyApp.Controllers"
+             x:Class="FawzyApp.Views.NotepadPages.NotepadMainPage">
+            
+            <StackLayout>
+                <Label x:Name="label"
+                       TextType="Html"
+                       Text="">
+                </Label>
+                <enty:CustomEntry x:Name="MyCustomEntry"
+                                  Margin="0,60,0,0"
+                                  VerticalTextAlignment="Start"
+                                  Text="Mohame Fawzy Helal"
+                                  SelectionLength="4"
+                                  CursorPosition="2">
+                </enty:CustomEntry>
+                <Button Text="get leanth"
+                        VerticalOptions="End"
+                        Clicked="Button_Clicked"/>
+            </StackLayout>
+</ContentPage>

@@ -1,3 +1,6 @@
+FawzyApp.Droid.CustomEntryRenderer, FawzyApp.Android;crc6410ec227480b24243.CustomEntryRenderer
+FawzyApp.Droid.CustomEntryRenderer;crc6410ec227480b24243.CustomEntryRenderer
+fawzyapp.droid.CustomEntryRenderer;crc6410ec227480b24243.CustomEntryRenderer
 FawzyApp.Droid.MainActivity, FawzyApp.Android;crc6410ec227480b24243.MainActivity
 FawzyApp.Droid.MainActivity;crc6410ec227480b24243.MainActivity
 fawzyapp.droid.MainActivity;crc6410ec227480b24243.MainActivity
